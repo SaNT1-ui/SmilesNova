@@ -1,0 +1,491 @@
+<!DOCTYPE html> <html lang="ru"> <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Клиника «Улыбка» — Стоматология в Душанбе</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?
+family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <style>
+body {
+font-family: 'Montserrat', sans-serif; scroll-behavior: smooth;
+} .hero-pattern {
+background-color: #e6f7ff;
+background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7- 7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43- 7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3- 3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56- 76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4- 4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5- 2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5- 5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2- 2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2399d6ff' fill-opacity='0.2' fill- rule='evenodd'/%3E%3C/svg%3E");
+} .service-card:hover {
+transform: translateY(-5px);
+ 
+ box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+.doctor-card:hover img { transform: scale(1.05);
+} </style>
+</head>
+<body class="bg-gray-50">
+<!-- Header/Navigation -->
+<header class="bg-white shadow-md fixed w-full z-10">
+<div class="container mx-auto px-4 py-3">
+<div class="flex justify-between items-center">
+<div class="flex items-center">
+<svg class="w-10 h-10 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12,2C6.477,2,2,6.477,2,12c0,5.523,4.477,10,10,10s10-4.477,10- 10C22,6.477,17.523,2,12,2z M16.5,15.5 c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5- 1.5s1.5,0.672,1.5,1.5S17.328,15.5,16.5,15.5z M14.5,10.5c-0.828,0-1.5-0.672-1.5-1.5 s0.672-1.5,1.5- 1.5s1.5,0.672,1.5,1.5S15.328,10.5,14.5,10.5z M9.5,10.5c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5- 1.5 s1.5,0.672,1.5,1.5S10.328,10.5,9.5,10.5z M7.5,15.5c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5- 1.5s1.5,0.672,1.5,1.5 S8.328,15.5,7.5,15.5z"></path>
+</svg>
+<h1 class="ml-2 text-2xl font-bold text-blue-600">Улыбка</h1> </div>
+<nav class="hidden md:flex space-x-8">
+<a href="#main" class="text-gray-700 hover:text-blue-600 font-medium">Главная</a> <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">О клинике</a> <a href="#doctors" class="text-gray-700 hover:text-blue-600 font-medium">Врачи</a> <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium">Услуги</a> <a href="#contacts" class="text-gray-700 hover:text-blue-600 font-
+medium">Контакты</a> </nav>
+<button id="mobile-menu-button" class="md:hidden text-gray-700">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+</svg> </button>
+</div>
+<div id="mobile-menu" class="md:hidden hidden py-2">
+<a href="#main" class="block py-2 text-gray-700 hover:text-blue-600 font- medium">Главная</a>
+<a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">О клинике</a>
+<a href="#doctors" class="block py-2 text-gray-700 hover:text-blue-600 font- medium">Врачи</a>
+<a href="#services" class="block py-2 text-gray-700 hover:text-blue-600 font-
+
+ medium">Услуги</a>
+<a href="#contacts" class="block py-2 text-gray-700 hover:text-blue-600 font-
+medium">Контакты</a> </div>
+</div> </header>
+<!-- Hero Section -->
+<section id="main" class="hero-pattern pt-28 pb-16">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0">
+<h2 class="text-4xl md:text-5xl font-bold text-blue-700 mb-4">Клиника «Улыбка» —
+ваша надежная стоматология в Душанбе!</h2>
+<p class="text-lg text-gray-700 mb-6">Мы заботимся о вашем здоровье и красоте
+улыбки. Современные технологии, опытные врачи и индивидуальный подход к каждому пациенту.</p>
+<button id="appointment-btn" class="bg-blue-600 hover:bg-blue-700 text-white font- medium py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg">
+Запишитесь на приём сегодня </button>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<svg class="w-full max-w-md" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+T30,200" />
+<path fill="#e6f7ff" d="M30,200 Q150,50 250,200 T470,200 Q350,350 250,200
+<circle cx="250" cy="200" r="120" fill="#ffffff" stroke="#3b82f6" stroke-width="8" /> <circle cx="210" cy="160" r="25" fill="#3b82f6" />
+<circle cx="290" cy="160" r="25" fill="#3b82f6" />
+<path fill="none" stroke="#3b82f6" stroke-width="8" stroke-linecap="round"
+d="M190,240 Q250,280 310,240" /> </svg>
+</div> </div>
+</div> </section>
+<!-- About Section -->
+<section id="about" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-12">О клинике</h2> <div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0">
+<div class="bg-blue-50 p-6 rounded-lg shadow-md">
+<svg class="w-16 h-16 text-blue-500 mx-auto mb-4" fill="currentColor" viewBox="0 0
+
+ 20 20">
+<path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812- 2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+</svg>
+<p class="text-gray-700 mb-4">Клиника «Улыбка» работает с 2010 года и предлагает полный спектр стоматологических услуг для всей семьи. Мы используем современное оборудование и сертифицированные материалы, а наши специалисты постоянно проходят обучение и внедряют новейшие методы лечения.</p>
+<p class="text-gray-700">Мы гарантируем комфорт и безопасность каждого пациента, индивидуальный подход и внимательное отношение.</p>
+</div> </div>
+<div class="md:w-1/2 md:pl-8">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-blue-100 p-4 rounded-lg text-center">
+<svg class="w-10 h-10 text-blue-600 mx-auto mb-2" fill="currentColor" viewBox="0
+0 20 20">
+<path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v- 1a5 5 0 015-5z"></path>
+0 20 20">
+</svg>
+<h3 class="font-semibold text-blue-700">Опытные специалисты</h3> </div>
+<div class="bg-blue-100 p-4 rounded-lg text-center">
+<svg class="w-10 h-10 text-blue-600 mx-auto mb-2" fill="currentColor" viewBox="0
+<path fill-rule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063- 1.063A3 3 0 009 8.172z" clip-rule="evenodd"></path>
+0 20 20">
+</svg>
+<h3 class="font-semibold text-blue-700">Современное оборудование</h3> </div>
+<div class="bg-blue-100 p-4 rounded-lg text-center">
+<svg class="w-10 h-10 text-blue-600 mx-auto mb-2" fill="currentColor" viewBox="0
+<path fill-rule="evenodd" d="M6.625 2.655A9 9 0 0119 11a1 1 0 11-2 0 7 7 0 00- 9.625-6.492 1 1 0 11-.75-1.853zM4.662 4.959A1 1 0 014.75 6.37 6.97 6.97 0 003 11a1 1 0 11-2 0 8.97 8.97 0 012.25-5.953 1 1 0 011.412-.088z" clip-rule="evenodd"></path>
+<path fill-rule="evenodd" d="M5 11a5 5 0 1110 0 1 1 0 11-2 0 3 3 0 10-6 0c0
+
+ 1.677-.345 3.276-.968 4.729a1 1 0 11-1.838-.789A9.964 9.964 0 005 11zm8.921 2.012a1 1 0 01.831 1.145 19.86 19.86 0 01-.545 2.436 1 1 0 11-1.92-.558c.207-.713.371-1.445.49-2.192a1 1 0 011.144-.83z" clip-rule="evenodd"></path>
+<path fill-rule="evenodd" d="M10 10a1 1 0 011 1c0 2.236-.46 4.368-1.29 6.304a1 1 0 01-1.838-.789A13.952 13.952 0 009 11a1 1 0 011-1z" clip-rule="evenodd"></path>
+0 20 20">
+</svg>
+<h3 class="font-semibold text-blue-700">Комфортное лечение</h3> </div>
+<div class="bg-blue-100 p-4 rounded-lg text-center">
+<svg class="w-10 h-10 text-blue-600 mx-auto mb-2" fill="currentColor" viewBox="0
+<path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path>
+</svg>
+<h3 class="font-semibold text-blue-700">Доступные цены</h3> </div>
+</div> </div>
+</div> </div>
+</section>
+<!-- Doctors Section -->
+<section id="doctors" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-12">Наши врачи</h2> <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Doctor 1 -->
+<div class="doctor-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+<div class="h-64 overflow-hidden">
+<svg class="w-full h-full object-cover transition duration-300" viewBox="0 0 200 200"
+xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#e6f7ff" />
+<circle cx="100" cy="70" r="40" fill="#3b82f6" />
+<rect x="60" y="110" width="80" height="90" fill="#3b82f6" />
+<circle cx="100" cy="70" r="35" fill="#f8fafc" />
+<circle cx="85" cy="65" r="6" fill="#1e3a8a" />
+<circle cx="115" cy="65" r="6" fill="#1e3a8a" />
+<path d="M85,85 Q100,95 115,85" stroke="#1e3a8a" stroke-width="3" fill="none" />
+</svg> </div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-blue-700 mb-2">Иванов Иван Иванович</h3> <p class="text-blue-600 font-medium mb-2">Терапевт</p>
+
+ <p class="text-gray-600 mb-4">Специалист с 15-летним стажем, специализируется на лечении кариеса и пульпита.</p>
+<button class="doctor-details-btn w-full bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium py-2 px-4 rounded transition duration-300">
+Подробнее </button>
+</div> </div>
+<!-- Doctor 2 -->
+<div class="doctor-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+<div class="h-64 overflow-hidden">
+<svg class="w-full h-full object-cover transition duration-300" viewBox="0 0 200 200"
+xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#e6f7ff" />
+<circle cx="100" cy="70" r="40" fill="#3b82f6" />
+<rect x="60" y="110" width="80" height="90" fill="#3b82f6" />
+<circle cx="100" cy="70" r="35" fill="#f8fafc" />
+<circle cx="85" cy="65" r="6" fill="#1e3a8a" />
+<circle cx="115" cy="65" r="6" fill="#1e3a8a" />
+<path d="M85,85 Q100,95 115,85" stroke="#1e3a8a" stroke-width="3" fill="none" /> <path d="M70,50 Q100,30 130,50" stroke="#3b82f6" stroke-width="3" fill="none" />
+</svg> </div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-blue-700 mb-2">Петрова Марина Сергеевна</h3> <p class="text-blue-600 font-medium mb-2">Ортодонт</p>
+<p class="text-gray-600 mb-4">Специалист с 10-летним опытом, занимается
+исправлением прикуса и установкой брекетов.</p>
+<button class="doctor-details-btn w-full bg-blue-100 hover:bg-blue-200 text-blue-700
+font-medium py-2 px-4 rounded transition duration-300"> Подробнее
+</button> </div>
+</div>
+<!-- Doctor 3 -->
+<div class="doctor-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+<div class="h-64 overflow-hidden">
+<svg class="w-full h-full object-cover transition duration-300" viewBox="0 0 200 200"
+xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#e6f7ff" />
+<circle cx="100" cy="70" r="40" fill="#3b82f6" />
+<rect x="60" y="110" width="80" height="90" fill="#3b82f6" />
+
+ <circle cx="100" cy="70" r="35" fill="#f8fafc" />
+<circle cx="85" cy="65" r="6" fill="#1e3a8a" />
+<circle cx="115" cy="65" r="6" fill="#1e3a8a" />
+<path d="M85,85 Q100,95 115,85" stroke="#1e3a8a" stroke-width="3" fill="none" /> <rect x="80" y="40" width="40" height="10" fill="#3b82f6" />
+</svg> </div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-blue-700 mb-2">Сидоров Алексей
+Владимирович</h3>
+<p class="text-blue-600 font-medium mb-2">Хирург-имплантолог</p>
+<p class="text-gray-600 mb-4">Специалист с 12-летним стажем, проводит
+сложные операции и имплантацию зубов.</p>
+<button class="doctor-details-btn w-full bg-blue-100 hover:bg-blue-200 text-blue-700
+font-medium py-2 px-4 rounded transition duration-300"> Подробнее
+</button> </div>
+</div> </div>
+</div> </section>
+<!-- Services Section -->
+<section id="services" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-12">Услуги и цены</h2> <div class="overflow-x-auto">
+<table class="w-full bg-white shadow-lg rounded-lg overflow-hidden"> <thead>
+<tr class="bg-blue-600 text-white">
+<th class="py-4 px-6 text-left">Услуга</th>
+<th class="py-4 px-6 text-right">Цена от (₽)</th>
+</tr> </thead>
+<tbody>
+<tr class="border-b border-gray-200 hover:bg-blue-50">
+<td class="py-4 px-6">Консультация</td>
+<td class="py-4 px-6 text-right font-medium">Бесплатно</td> </tr>
+<tr class="border-b border-gray-200 hover:bg-blue-50"> <td class="py-4 px-6">Лечение кариеса</td>
+<td class="py-4 px-6 text-right font-medium">1500</td>
+</tr>
+<tr class="border-b border-gray-200 hover:bg-blue-50">
+<td class="py-4 px-6">Профессиональная чистка</td>
+
+ <td class="py-4 px-6 text-right font-medium">3500</td> </tr>
+<tr class="border-b border-gray-200 hover:bg-blue-50"> <td class="py-4 px-6">Отбеливание зубов</td>
+<td class="py-4 px-6 text-right font-medium">4000</td>
+</tr>
+<tr class="border-b border-gray-200 hover:bg-blue-50">
+<td class="py-4 px-6">Установка пломб</td>
+<td class="py-4 px-6 text-right font-medium">2000</td> </tr>
+<tr class="border-b border-gray-200 hover:bg-blue-50"> <td class="py-4 px-6">Ортодонтия (брекеты)</td>
+<td class="py-4 px-6 text-right font-medium">30000</td>
+</tr>
+<tr class="hover:bg-blue-50">
+<td class="py-4 px-6">Имплантация зубов</td>
+<td class="py-4 px-6 text-right font-medium">50000</td> </tr>
+</tbody> </table>
+</div>
+<p class="text-gray-600 mt-6 text-center">Все процедуры выполняются с использованием качественных материалов и современных технологий.</p>
+<div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="service-card bg-blue-50 rounded-lg p-6 shadow-md transition duration-300">
+<svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20"> <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2
+0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path> </svg>
+<h3 class="text-xl font-bold text-blue-700 mb-2">Профилактика</h3>
+<p class="text-gray-600">Регулярные осмотры, профессиональная чистка и консультации по гигиене полости рта.</p>
+</div>
+<div class="service-card bg-blue-50 rounded-lg p-6 shadow-md transition duration-300"> <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+</svg>
+<h3 class="text-xl font-bold text-blue-700 mb-2">Лечение</h3>
+<p class="text-gray-600">Лечение кариеса, пульпита, периодонтита и других
+заболеваний зубов и десен.</p> </div>
+<div class="service-card bg-blue-50 rounded-lg p-6 shadow-md transition duration-300">
+
+ <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20"> <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-
+1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path> </svg>
+<h3 class="text-xl font-bold text-blue-700 mb-2">Эстетика</h3>
+<p class="text-gray-600">Отбеливание зубов, установка виниров, художественная реставрация.</p>
+</div> </div>
+</div> </section>
+<!-- Testimonials Section --> <section class="py-16 bg-blue-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-12">Отзывы пациентов</h2> <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white p-6 rounded-lg shadow-md"> <div class="flex items-center mb-4">
+<div class="bg-blue-100 rounded-full p-3 mr-4">
+<svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+</svg> </div>
+<div>
+<h3 class="font-bold text-gray-800">Алия</h3> <div class="flex text-yellow-400">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38- 1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38- 1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38- 1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8
+
+ 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38- 1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38- 1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+</div> </div>
+</div>
+<p class="text-gray-600 italic">"Очень доволен лечением, врачи внимательные и профессиональные."</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md"> <div class="flex items-center mb-4">
+<div class="bg-blue-100 rounded-full p-3 mr-4">
+<svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+<path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+</svg> </div>
+<div>
+<h3 class="font-bold text-gray-800">Руслан</h3> <div class="flex text-yellow-400">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38- 1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38- 1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38- 1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38- 1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path
+
+ d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+</div> </div>
+</div>
+<p class="text-gray-600 italic">"Хорошая клиника, качественно и быстро сделали отбеливание."</p>
+</div> </div>
+<div class="mt-10 text-center">
+<button id="leave-review-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-
+medium py-2 px-6 rounded-lg transition duration-300"> Оставить отзыв
+</button> </div>
+</div> </section>
+<!-- Contact Section -->
+<section id="contacts" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-blue-700 mb-12">Контакты</h2> <div class="flex flex-col md:flex-row">
+<div class="md:w-1/2 mb-8 md:mb-0">
+<div class="bg-blue-50 p-6 rounded-lg shadow-md h-full">
+<h3 class="text-xl font-bold text-blue-700 mb-4">Наш адрес</h3> <div class="flex items-start mb-4">
+<svg class="w-6 h-6 text-blue-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+</svg>
+<p class="text-gray-700">г. Душанбе, ул. Примерная, 12</p> </div>
+<div class="flex items-start mb-4">
+<svg class="w-6 h-6 text-blue-600 mr-3 mt-1" fill="none" stroke="currentColor"
+viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2
+2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h- 1C9.716 21 3 14.284 3 6V5z"></path>
+
+ </svg>
+<p class="text-gray-700">+992 123 456 789</p> </div>
+<div class="flex items-start mb-4">
+<svg class="w-6 h-6 text-blue-600 mr-3 mt-1" fill="none" stroke="currentColor"
+viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3
+8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+</svg>
+<p class="text-gray-700">info@ulybka.tj</p> </div>
+<div class="flex items-start">
+<svg class="w-6 h-6 text-blue-600 mr-3 mt-1" fill="none" stroke="currentColor"
+viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12
+8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path> </svg>
+<p class="text-gray-700">Пн–Сб с 9:00 до 19:00</p> </div>
+<div class="mt-6">
+<h4 class="font-bold text-blue-700 mb-2">Мы в социальных сетях:</h4> <div class="flex space-x-4">
+<a href="#" class="text-blue-600 hover:text-blue-800">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669
+1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h- 2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+</svg> </a>
+<a href="#" class="text-blue-600 hover:text-blue-800">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-
+4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919- 4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059- 1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98- 1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0- 2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+
+ </svg> </a>
+<a href="#" class="text-blue-600 hover:text-blue-800">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-
+2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/> </svg>
+</a> </div>
+</div> </div>
+</div>
+<div class="md:w-1/2 md:pl-8">
+<form id="contact-form" class="bg-white p-6 rounded-lg shadow-md">
+имя</label>
+<h3 class="text-xl font-bold text-blue-700 mb-4">Запись на приём</h3> <div class="mb-4">
+<label class="block text-gray-700 font-medium mb-2" for="name">Ваше
+<input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 font-medium mb-2" for="phone">Телефон</label>
+<input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 font-medium mb-2" for="service">Услуга</label>
+<select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+<option value="">Выберите услугу</option>
+<option value="consultation">Консультация</option>
+<option value="caries">Лечение кариеса</option>
+<option value="cleaning">Профессиональная чистка</option> <option value="whitening">Отбеливание зубов</option> <option value="filling">Установка пломб</option>
+<option value="braces">Ортодонтия (брекеты)</option> <option value="implants">Имплантация зубов</option>
+</select> </div>
+<div class="mb-6">
+<label class="block text-gray-700 font-medium mb-2"
+for="message">Сообщение</label>
+
+ <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+</div>
+<button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font- medium py-2 px-4 rounded-lg transition duration-300">
+Записаться </button>
+</form> </div>
+</div> </div>
+</section>
+<!-- Footer -->
+<footer class="bg-blue-800 text-white py-8">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between">
+<div class="mb-6 md:mb-0"> <div class="flex items-center">
+<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12,2C6.477,2,2,6.477,2,12c0,5.523,4.477,10,10,10s10-4.477,10-
+10C22,6.477,17.523,2,12,2z M16.5,15.5 c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5- 1.5s1.5,0.672,1.5,1.5S17.328,15.5,16.5,15.5z M14.5,10.5c-0.828,0-1.5-0.672-1.5-1.5 s0.672-1.5,1.5- 1.5s1.5,0.672,1.5,1.5S15.328,10.5,14.5,10.5z M9.5,10.5c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5- 1.5 s1.5,0.672,1.5,1.5S10.328,10.5,9.5,10.5z M7.5,15.5c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5- 1.5s1.5,0.672,1.5,1.5 S8.328,15.5,7.5,15.5z"></path>
+</svg>
+<h2 class="ml-2 text-xl font-bold">Клиника «Улыбка»</h2> </div>
+<p class="mt-2 text-blue-200">Ваша надежная стоматология в Душанбе</p> </div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8"> <div>
+<h3 class="font-semibold text-lg mb-3">Навигация</h3> <ul class="space-y-2">
+<li><a href="#main" class="text-blue-200 hover:text-white">Главная</a></li> <li><a href="#about" class="text-blue-200 hover:text-white">О клинике</a></li> <li><a href="#doctors" class="text-blue-200 hover:text-white">Врачи</a></li> <li><a href="#services" class="text-blue-200 hover:text-white">Услуги</a></li> <li><a href="#contacts" class="text-blue-200 hover:text-white">Контакты</a></li>
+</ul> </div>
+<div>
+<h3 class="font-semibold text-lg mb-3">Услуги</h3>
+
+ </li> кариеса</a></li> </li>
+</li>
+<li><a href="#services" class="text-blue-200 hover:text-white">Лечение
+<li><a href="#services" class="text-blue-200 hover:text-white">Отбеливание</a> <li><a href="#services" class="text-blue-200 hover:text-white">Имплантация</a>
+24 24">
+24 24">
+24 24">
+<ul class="space-y-2">
+<li><a href="#services" class="text-blue-200 hover:text-white">Консультация</a>
+</ul> </div>
+<div class="col-span-2 md:col-span-1">
+<h3 class="font-semibold text-lg mb-3">Контакты</h3> <ul class="space-y-2">
+<li class="flex items-start">
+<svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+</svg>
+<span class="text-blue-200">г. Душанбе, ул. Примерная, 12</span> </li>
+<li class="flex items-start">
+<svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h- 1C9.716 21 3 14.284 3 6V5z"></path>
+</svg>
+<span class="text-blue-200">+992 123 456 789</span> </li>
+<li class="flex items-start">
+<svg class="w-5 h-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+</svg>
+<span class="text-blue-200">info@ulybka.tj</span> </li>
+</ul> </div>
+
+ </div> </div>
+<div class="mt-8 pt-6 border-t border-blue-700 text-center text-blue-300"> <p>&copy; 2023 Клиника «Улыбка». Все права защищены.</p>
+</div> </div>
+</footer>
+<!-- Appointment Modal -->
+<div id="appointment-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+<div class="bg-white rounded-lg p-8 max-w-md w-full mx-4"> <div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-blue-700">Запись на приём</h3> <button id="close-modal" class="text-gray-500 hover:text-gray-700">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18
+6M6 6l12 12"></path> </svg>
+</button> </div>
+<form id="modal-form"> <div class="mb-4">
+<label class="block text-gray-700 font-medium mb-2" for="modal-name">Ваше имя</label>
+<input type="text" id="modal-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 font-medium mb-2" for="modal- phone">Телефон</label>
+<input type="tel" id="modal-phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 font-medium mb-2" for="modal- date">Предпочтительная дата</label>
+<input type="date" id="modal-date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 font-medium mb-2" for="modal- service">Услуга</label>
+<select id="modal-service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+ <option value="">Выберите услугу</option>
+<option value="consultation">Консультация</option>
+<option value="caries">Лечение кариеса</option>
+<option value="cleaning">Профессиональная чистка</option> <option value="whitening">Отбеливание зубов</option> <option value="filling">Установка пломб</option>
+<option value="braces">Ортодонтия (брекеты)</option> <option value="implants">Имплантация зубов</option>
+</select> </div>
+<button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300">
+Записаться </button>
+</form> </div>
+</div>
+<!-- Review Modal -->
+<div id="review-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify- center hidden">
+<div class="bg-white rounded-lg p-8 max-w-md w-full mx-4"> <div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-blue-700">Оставить отзыв</h3>
+<button id="close-review-modal" class="text-gray-500 hover:text-gray-700">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18
+6M6 6l12 12"></path> </svg>
+</button> </div>
+<form id="review-form"> <div class="mb-4">
+<label class="block text-gray-700 font-medium mb-2" for="review-name">Ваше имя</label>
+<input type="text" id="review-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 font-medium mb-2">Оценка</label> <div class="flex space-x-2" id="rating">
+<button type="button" class="star text-gray-300 hover:text-yellow-400" data-
+value="1">
+00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755
+<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0
+
+ 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07- 3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07- 3.292z"></path>
+</svg> </button>
+<button type="button" class="star text-gray-300 hover:text-yellow-400" data-
+<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0
+value="2">
+00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07- 3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07- 3.292z"></path>
+</svg> </button>
+<button type="button" class="star text-gray-300 hover:text-yellow-400" data-
+<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0
+value="3">
+00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07- 3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07- 3.292z"></path>
+</svg> </button>
+<button type="button"```
